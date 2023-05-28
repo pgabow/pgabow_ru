@@ -1,0 +1,81 @@
+.hero {
+  background: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.hero__nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  line-height: 1;
+  height: 75px;
+  overflow: hidden;
+}
+
+.hero__title {
+	font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  font-size: 58px;
+  line-height: 1;
+  z-index: 1;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: .8;
+}
+
+.hero__logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav__link {
+  display: inline-block;
+  /* text-decoration: none; */
+  color: #ea580c;
+}
+
+.nav__link:not(:last-child) {
+  padding-right: 32px;
+}
+
+.hero__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  line-height: 1;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+  opacity: .5;
+  font-size: 14px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .hero, .hero__nav, .hero__bottom {
+    padding: 0 20px;
+  }
+
+  .hero__nav {
+    box-sizing: border-box;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+}
