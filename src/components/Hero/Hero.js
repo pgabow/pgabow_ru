@@ -38,7 +38,13 @@ function Hero(props) {
           <img className='hero__logo' src={heroIcon} alt='hero__icon' />
         </span>
         <div className='nav__linkContainer'>
-          <a className='nav__link' href='http://gabow.ru' rel='noreferrer'>
+          <a
+            className='nav__link'
+            href='http://gabow.ru'
+            rel='noreferrer'
+            title='gabow.ru'
+            alt='gabow.ru'
+          >
             gabow.ru
           </a>
         </div>

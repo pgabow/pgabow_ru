@@ -27,6 +27,7 @@
 	font-family: 'Ubuntu', sans-serif;
   margin: 0;
   font-size: 58px;
+	color: #F83E00;
   line-height: 1;
   z-index: 1;
   letter-spacing: 10px;
@@ -43,7 +44,10 @@
 .nav__link {
   display: inline-block;
   /* text-decoration: none; */
-  color: #ea580c;
+  color: #A0A0A0;
+}
+.nav__link:hover {
+  color: #F83E00;
 }
 
 .nav__link:not(:last-child) {
